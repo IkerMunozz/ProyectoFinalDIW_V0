@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="css/styleformsesion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo-Photoroom.png" alt="logo"  onclick="window.location.href='principal.html';">
+        </div>
+        <div class="headermenu">
+            <a href="social.html">Social</a>
+            <a href="salas.html">Salas</a>
+            <a href="desafios.html">Ranking y desafíos</a>
+        </div>
+    </header>
+    <main>
+        <div class="tarjeta">
+            <div class="contenido">
+                <h1 class="texto tituloprincipal">Inicia Sesión</h1>
+                <h2 class="texto titulosecundario">Introduce tu email para iniciar sesión</h2>
+                <form action="formsesion">
+                    <label for="email" class="texto">Email</label>
+                    <input type="text" placeholder="Escribe el email">
+                    
+                    <label for="contraseña" class="texto">Contraseña</label>
+                    <input type="password" placeholder="Escribe la contraseña">
+                    
+                    <div class="recordar">
+                        <input type="checkbox" id="recordar">
+                        <label for="recordar"> Recordar contraseña</label>
+                    </div>
+                    
+                    <input type="button" value="Login" class="btn">
+                </form>
+        
+                <p class="registro">¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+    
+        <div class="menu-completo">
+
+            <div class="footer-menu">
+                <a href="#">About</a>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Gallery</a>
+                <a href="#">Team</a>
+
+            </div>
+            <button class="contact-btn">Contact Us</button>
+        </div>
+
+        </div>
+    
+        <hr class="footer-line">
+    
+        <p class="footer-text">Iker Muñoz Herrero</p>
+    </footer>
+</body>
+</html>

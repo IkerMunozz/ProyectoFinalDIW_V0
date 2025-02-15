@@ -6,88 +6,84 @@
     <title>Página de registro</title>
     <link rel="stylesheet" href="css/styleformregistro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="img/logo-Photoroom.png" alt="logo"  onclick="window.location.href='principal.html';">
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-img" src="img/logo.png" alt="logo" onclick="window.location.href='principal.html';">
         </div>
-        <div class="headermenu">
-            <a href="social.html">Social</a>
-            <a href="salas.html">Salas</a>
-            <a href="desafios.html">Ranking y desafíos</a>
-        </div>
+        <button class="header__menu-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="header__nav">
+            <a href="social.html" class="header__nav-enlace">Social</a>
+            <a href="salas.html" class="header__nav-enlace">Salas</a>
+            <a href="desafio.html" class="header__nav-enlace">Ranking y desafíos</a>
+        </nav>
     </header>
-    <main>
+    <main class="main">
         <div class="tarjeta">
-            <div class="contenido">
-                <h1 class="texto tituloprincipal">Regístrate</h1>
-                <h2 class="texto titulosecundario">Regístrate para disfrutar de BetSports</h2>
-                <form action="formregistro">
-                    <div class="campos">
-                        <div class="campo-izquierda">
-                            <label for="email" class="texto">Email</label>
-                            <input type="text" placeholder="Escribe el email">
+            <div class="tarjeta__contenido">
+                <h1 class="tarjeta__titulo">Regístrate</h1>
+                <h2 class="tarjeta__subtitulo">Regístrate para disfrutar de BetSports</h2>
+                <form class="formulario">
+                    <div class="formulario__campos">
+                        <div class="formulario__columna">
+                            <label for="email" class="formulario__label">Email</label>
+                            <input type="text" class="formulario__input" placeholder="Escribe el email">
                             
-                            <label for="contraseña" class="texto">Contraseña</label>
-                            <input type="password" placeholder="Escribe la contraseña">
+                            <label for="contraseña" class="formulario__label">Contraseña</label>
+                            <input type="password" class="formulario__input" placeholder="Escribe la contraseña">
         
-                            <label for="dni" class="texto">DNI</label>
-                            <input type="text" placeholder="Escribe tu dni">
+                            <label for="dni" class="formulario__label">DNI</label>
+                            <input type="text" class="formulario__input" placeholder="Escribe tu dni">
                         </div>
         
-                        <div class="campo-derecha">
-                            <label for="direccion" class="texto">Dirección</label>
-                            <input type="text" placeholder="Escribe tu dirección">
+                        <div class="formulario__columna">
+                            <label for="direccion" class="formulario__label">Dirección</label>
+                            <input type="text" class="formulario__input" placeholder="Escribe tu dirección">
         
-                            <label for="nacionalidad" class="texto">Nacionalidad</label>
-                            <input type="text" placeholder="Escribe tu nacionalidad">
+                            <label for="nacionalidad" class="formulario__label">Nacionalidad</label>
+                            <input type="text" class="formulario__input" placeholder="Escribe tu nacionalidad">
         
-                            <label for="edad" class="texto">Fecha de nacimiento</label>
-                            <input type="text" placeholder="Escribe tu fecha de nacimiento">
+                            <label for="edad" class="formulario__label">Fecha de nacimiento</label>
+                            <input type="date" id="edad" class="formulario__input" placeholder="Escribe tu fecha de nacimiento">
                         </div>
                     </div>
         
-                    <div class="boton">
-                        <input type="button" value="Regístrate" class="btn">
+                    <div class="formulario__boton-contenedor">
+                        <input type="button" value="Regístrate" class="formulario__boton">
                     </div>
                 </form>
             </div>
         </div>
-        
-        
-        
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-telegram"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-behance"></i></a>
+    <footer class="footer">
+        <div class="footer__contenido">
+            <div class="footer__redes">
+                <a href="#" class="footer__redes-enlace"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer__redes-enlace"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="footer__redes-enlace"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer__redes-enlace"><i class="fab fa-telegram"></i></a>
+                <a href="#" class="footer__redes-enlace"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer__redes-enlace"><i class="fab fa-behance"></i></a>
             </div>
-    
-        <div class="menu-completo">
-
-            <div class="footer-menu">
-                <a href="#">About</a>
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">Gallery</a>
-                <a href="#">Team</a>
-
+            <div class="footer__menu-contenedor">
+                <nav class="footer__menu">
+                    <a href="#" class="footer__menu-enlace">About</a>
+                    <a href="#" class="footer__menu-enlace">Features</a>
+                    <a href="#" class="footer__menu-enlace">Pricing</a>
+                    <a href="#" class="footer__menu-enlace">Gallery</a>
+                    <a href="#" class="footer__menu-enlace">Team</a>
+                </nav>
+                <button class="footer__boton-contacto">Contact Us</button>
             </div>
-            <button class="contact-btn">Contact Us</button>
         </div>
-
-        </div>
-    
-        <hr class="footer-line">
-    
-        <p class="footer-text">Iker Muñoz Herrero</p>
+        <hr class="footer__linea">
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" class="footer__licencia">
+            <img class="footer__licencia-img" src="https://licensebuttons.net/l/by/4.0/88x31.png" alt="Licencia Creative Commons BY 4.0">
+        </a>
     </footer>
+    <script defer src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+/* Estilos comunes para todas las capas */
+/* Estilos comunes para todas las capas */
+.container {
+    width: 210px; /* Ajusta el ancho del contenedor para que solo entren dos cuadros por fila */
+}
+
+div {
+    color: white; /* Color del texto */
+    width: 100px; /* Ancho de 100 píxeles */
+    height: 100px; /* Altura de 100 píxeles */
+    padding: 5px; /* Padding de 5 píxeles */
+    border: 1px solid white; /* Borde blanco de 1 píxel */
+    display: inline-block; /* Mostrar las capas en línea */
+    text-align: center; /* Centrar el texto horizontalmente */
+    line-height: 100px; /* Centrar el texto verticalmente */
+    margin: 0; /* Elimina los márgenes externos */
+}
+
+/* Estilos específicos para cada capa */
+.azul {
+    background-color: blue; /* Fondo azul */
+}
+
+.verde {
+    background-color: green; /* Fondo verde */
+}
+
+.rojo {
+    background-color: red; /* Fondo rojo */
+}
+
+.negro {
+    background-color: black; /* Fondo negro */
+}
+

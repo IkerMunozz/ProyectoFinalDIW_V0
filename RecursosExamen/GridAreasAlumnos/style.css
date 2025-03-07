@@ -1,0 +1,85 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Completar el código necesario para que las grillas sean iguales a las imágnes de cada breakpoint dadas en la carpeta disenioBreakPoints, hay código comentado que debes descomentar, utilizar y completar si hace falta*/
+
+/* Diseño del Grid */
+
+
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(6,1fr); /*6 columnas de 1fr*/
+    grid-template-rows: repeat(4,175px); /*4 filas de 175px*/
+    gap: 1rem; 
+    background-color: #fff;
+    overflow: hidden;
+    max-width: 1200px;
+    width: 90vw;
+    margin: 0 auto;
+    grid-template-areas: /*colocacion de imagenes*/
+        "img1 img1 img2 img2 img3 img3"
+        "img1 img1 img4 img4 img3 img3"
+        "img5 img5 img4 img4 img6 img6"
+        "img7 img8 img8 img8 img9 img9"
+        ; 
+}
+
+.portfolio__grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta las imágenes */
+    
+}
+
+/* Asignación de áreas */
+
+.img1 { grid-area: img1; }
+.img2 { grid-area: img2; }
+.img3 { grid-area: img3; }
+.img4 { grid-area: img4; }
+.img5 { grid-area: img5; }
+.img6 { grid-area: img6; }
+.img7 { grid-area: img7; }
+.img8 { grid-area: img8; }
+.img9 { grid-area: img9; } 
+
+/* Media Queries: Ajustes por tamaño */
+@media (width <= 768px) {
+    .portfolio__grid {
+        object-fit: cover;
+        grid-template-columns: repeat(4,1fr); /*4 columnas de 1fr cuando el ancho sea menor o igual a 768px*/
+        grid-template-rows: repeat(7,100px); /*7 columnas de 100px cuando el ancho sea menor o igual a 768px*/
+        gap: 10px; /*separacion entre elementos*/
+        grid-template-areas: /*colocacion de imagenes*/
+            "img1 img1 img2 img2"
+            "img1 img1 img3 img3"
+            "img1 img1 img3 img3"
+            "img4 img4 img4 img5"
+            "img6 img6 img7 img7"
+            "img8 img8 img9 img9"
+            "img8 img8 img9 img9"
+
+           ; 
+    }
+}
+
+@media (width <= 480px) {
+    
+    .portfolio__grid {
+        object-fit: cover;
+        grid-template-columns: repeat(2,150px); /*2 columnas de 150px cuando el ancho sea menor o igual a 480px*/
+        grid-template-rows: repeat(5,150px); /*5 filas de 150px cuando el ancho sea menor o igual a 480px*/
+        gap: 5px; /*separacion entre imagenes*/
+        grid-template-areas: /*colocacion de imagenes*/
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8"
+            "img9 img9"
+            ; 
+    }
+}

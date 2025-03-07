@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Righteous';
+    src: url('Righteous-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url('ShadowsIntoLight.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #555555; 
+    color: white;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 2rem; 
+    margin: 20px 0;
+    text-transform: uppercase;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.photo-text-container {
+    margin: 20px auto;
+    position: relative;
+    width: 80%; 
+    max-width: 600px;
+    background-color: #888888;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+}
+
+.photo-text {
+    position: absolute;
+    width: 100%;
+    top: 5%; 
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    font-size: 2em; 
+    text-align: center;
+    line-height: 1.2; 
+    text-transform: uppercase;
+    font-stretch: expanded;
+    font-weight: bold;
+    text-shadow: 5px 1px 1px red;
+}
+
+
+
+.photo-text-2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-style: italic;
+    color: black;
+    text-shadow: 5px 1px 1px blue;
+}
+

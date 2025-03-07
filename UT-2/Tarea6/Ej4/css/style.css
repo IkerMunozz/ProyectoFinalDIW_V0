@@ -1,0 +1,32 @@
+h2{
+    text-align: center;
+    margin-top: 100px;
+}.lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.lista li {
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+.lista li:nth-child(odd) {
+    background-color: #f7d6b2; 
+    color: #f58a0f; 
+}
+
+.lista li:nth-child(even) {
+    background-color: #f58a0f; 
+    color: #f7d6b2; 
+}
+
+

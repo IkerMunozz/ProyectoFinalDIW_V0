@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    color: white;
+    background-color: rgb(3, 118, 93);
+    justify-content: space-between;
+    padding: 20px;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+header ul li{
+    padding: 10px;
+    
+}
+.elementos{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.cajatexto{
+    margin-left: auto;
+    display: flex;
+    text-align: center;
+    margin: 5px;
+    text-align: start;
+    height: 20px;
+}
+.boton{
+    color: rgb(3, 118, 93);
+    border-radius: 10px;
+    width: 40px;
+}
+

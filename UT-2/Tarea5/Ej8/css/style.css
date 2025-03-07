@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(3, 185, 161);
+}
+
+form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.datos {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    padding: 20px;
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+    padding: 5px 20px;
+    width: 30%; 
+}
+
+input[type="text"],
+textarea {
+    width: 70%; 
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.checkbox-group {
+    width: 70%; 
+}
+
+
+
+
+
+

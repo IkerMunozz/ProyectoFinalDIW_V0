@@ -1,0 +1,66 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bloque {
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+    color: #333;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.b1 {
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.b2 {
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+}
+
+.b3 {
+    background-image: url(../img/img1.jpg);
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    height: 300px;
+}
+
+.b4 {
+    background-image: url(../img/img1.jpg);
+    border: 5px dotted blue;
+    background-clip: content-box;
+    background-size: cover;
+    height: 300px;
+}
+
+.b5 {
+    background-image: url(../img/img1.jpg);
+    border: 5px dotted blue;
+    background-size: cover;
+    height: 300px;
+}
+
+.b6 {
+    background-image: url(../img/img1.jpg), url(../img/img2.jpg);
+    background-position: left bottom, top center;
+    background-repeat: repeat-y, repeat-x;
+    background-size: 100px, 100px;
+    border: 5px dotted blue;
+    background-clip: padding-box;
+    height: 300px;
+    padding: 20px;
+}
+
+
+

@@ -1,0 +1,39 @@
+body{
+    border: 0;
+    padding: 0;
+    display: flex;
+}
+div{
+    background-color: #609a9e;
+    border: 3px solid orange;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.f2{
+border-radius: 10px;
+}
+.f3{
+    border-radius: 50px;
+}
+.f4{
+    border-radius: 50px 50px 50px 10px;
+}
+.f5{
+    border-radius: 50px 10px 50px 50px;
+}
+.f6{
+    border-radius: 100% 0 0 0;
+}
+.f7{
+    border-radius: 0 100% 100% 0;
+}
+.f8{
+    border-radius: 0px 100% 100% 100%;
+}
+.f9{
+    border-radius: 100% 0% 100% 0%;
+}
+.f10{
+    border-radius: 10px 10px 0px 0px;
+}

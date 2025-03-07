@@ -1,0 +1,83 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    background-image: url(../fondos/corazon-1.svg), url(../fondos/corazon-2.svg);
+    background-position: left top, right top;
+    background-repeat: repeat-y;
+    background-size: 100px;
+
+
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    border: 20px solid transparent;
+    background-clip: padding-box;
+    padding: 20px;
+    background-size: 50px;
+    margin-bottom: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para cada soneto */
+  .p1, .p2, .p3, .p4 {
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 18px;
+    border: 1px solid black;
+
+  }
+  
+  /* Estilos específicos de cada soneto */
+  .p1 {
+    background-color: #d0c389;
+    background-image: url(../fondos/manchas.png); 
+    color: white;
+
+  }
+  
+  .p2 {
+    background-color: #a569bd;
+    background-image: url(../fondos/fuego.svg),url(../fondos/fuego.svg), url(../fondos/tallos.jpg); 
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: left bottom, right bottom;
+    color: orange;
+  }
+  
+  
+  .p3 {
+    
+        background-image:  url(../fondos/ojo.svg),url(../fondos/hexagonos.jpg); /* Fondo repetido + imagen centrada */
+        background-repeat: no-repeat, repeat; /* Repetir los hexágonos, pero no repetir el ojo */
+        background-position:center; /* El ojo estará en el centro */
+        color: red;
+        text-align: center;
+        background-size: 200px;    
+    
+  }
+  
+  .p4 {
+    background-color: #a2b9bc;
+    background-image:url(../fondos/caballo.svg), url(../fondos/estrellas.png);
+    background-repeat: repeat-x, repeat;
+    background-size: 100px;
+    background-position: center bottom;
+    color: green;
+    padding-bottom: 30px;
+  }
+  
+
+  
+
+

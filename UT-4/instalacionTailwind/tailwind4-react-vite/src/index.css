@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+
+:root{
+  --max-width-card:25rem;
+  --title-card-color:rgb(0, 0, 73);
+}
+@theme {
+  --font-kanit: 'Kanit', sans-serif;
+}
+
+.font-kanit{
+  font-family: var(--font-kanit);
+}
+
+@layer base {
+  :is(h1,h2,h3,h4,h5,h6){
+    text-wrap: balance;
+  }
+  p{
+    text-wrap: pretty;
+  }
+  button{
+    cursor: pointer;
+  }
+  html{
+    scrollbar-width: thin;
+    scrollbar-color: red blue;
+  }
+}

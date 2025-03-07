@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.titulo {
+    border: 20px solid black;
+    padding: 20px 40px;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+.titulo h1 {
+    
+    border: 2px dashed black;
+    padding: 10px;    
+}
+
+.titulo:hover {
+    border: 20px solid #00bfff; 
+    color: white;
+    background-color: black;
+    border: 20px solid #00bfff;
+}
+

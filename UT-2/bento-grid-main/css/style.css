@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(220, 218, 218);
+    color: #333;
+    line-height: 1.6;
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+        "i7 i7 i1 i1 i4"
+        "i7 i7 i2 i3 i4"
+        "i8 i8 i2 i3 i4"
+        "i8 i8 i6 i5 i5"
+        ;
+    
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.i1 {
+    grid-area: i1;
+    background-color: hsl(256, 67%, 59%);
+    color: #FFF;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.i1, .i2, .i3, .i4, .i5, .i6, .i7, .i8 {
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+.sub {
+    color: #F4B400;
+}
+
+.i2 {
+    grid-area: i2;
+    background-color: #FFF;
+}
+
+.i3 {
+    grid-area: i3;
+    background-color: hsl(39, 100%, 71%);
+}
+
+.i4 {
+    grid-area: i4;
+    background-color: hsl(254, 88%, 90%);
+}
+
+
+.i5 {
+    grid-area: i5;
+    background-color: hsl(256, 67%, 59%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.i6 {
+    grid-area: i6;
+    background-color: #FFF;
+}
+
+.i7 {
+    grid-area: i7;
+    background-color: hsl(31, 66%, 93%);
+}
+
+.i8 {
+    grid-area: i8;
+    background-color: hsl(39, 100%, 71%);
+
+}
+img {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 10px;
+
+}
+.p56{
+    font-size: 56px;
+    text-align: left;
+}
+
+.tittle{
+    font-size: 35px; 
+   font-family: "DM Sans", sans-serif; 
+   padding: 0;
+   margin: 0;
+   line-height: 1.2;
+}
+.imgmedia{
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    width: auto;
+    height: 500px;
+    
+}
+.textCreate{
+    font-size: 50px;
+    line-height: 1.2;
+    text-align: left;
+
+}
+.sub2{
+    color: hsl(256, 67%, 59%);
+    font-style: italic;
+}
+.i1 h1{
+    font-size: 60px;
+    font-family: "DM Sans", sans-serif; 
+}
+.textgrow{
+    font-family: "DM Sans", sans-serif; 
+    color: white;
+    font-size: 40px;
+}
+.cuerpo{
+    font-family: "DM Sans", sans-serif; 
+
+}
+.faster{
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    #container {
+        display: grid;
+        grid-template-areas:
+            "i1"
+            "i2"
+            "i3"
+            "i4"
+            "i5"
+            "i6"
+            "i7"
+            "i8";
+        gap: 1rem;
+    }
+}

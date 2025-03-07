@@ -1,0 +1,59 @@
+/* Estilos generales para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 2px solid white;
+
+}
+
+/* Estilo de los encabezados de columna */
+.table th {
+    background-color: darkseagreen;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+
+}
+
+/* Estilo para la primera columna (categorías) */
+.table th:first-child {
+    background-color: darkseagreen;
+    color: white;
+    font-weight: normal;
+}
+
+/* Estilo para las celdas de datos */
+.table td {
+    padding: 10px;
+    color: rgb(39, 38, 38);
+    background-color: gray;
+    border: 2px solid white;
+
+}
+.table td:hover{
+background-color: white;
+}
+
+
+/* Estilo para las celdas de precio */
+.table tr:last-child td {
+    color: darkseagreen;
+    font-size: 50px;
+    background-color: white;
+}
+
+.table .ultima th,
+.table .ultima td
+{
+    background-color: white;
+    color: black;
+}
+
+.table th.fondo{
+    background-color: white;
+}
+
+

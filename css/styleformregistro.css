@@ -24,6 +24,8 @@ body {
     min-height: 100vh;
 }
 
+
+
 body::before {
     content: "";
     position: absolute;
@@ -35,6 +37,7 @@ body::before {
     z-index: -1;
 }
 
+/* Header */
 .header {
     background-color: var(--color-negro);
     width: 100%;
@@ -49,7 +52,13 @@ body::before {
 .header__logo-img {
     height: 190px;
     cursor: pointer;
+    transition: transform 0.2s ease-out;
 }
+
+.header__logo-img:hover {
+    transform: scale(1.05); 
+}
+
 
 .header__nav {
     display: flex;
@@ -77,6 +86,7 @@ body::before {
     cursor: pointer;
 }
 
+/* Main */
 .main {
     display: flex;
     justify-content: center;
@@ -86,6 +96,7 @@ body::before {
     flex: 1;
 }
 
+/* Tarjeta */
 .tarjeta {
     background: rgba(0, 0, 0, 0.7);
     padding: 30px;
@@ -114,6 +125,7 @@ body::before {
     font-size: 16px;
 }
 
+/* Formulario */
 .formulario__campos {
     display: flex;
     justify-content: space-between;
@@ -162,13 +174,18 @@ body::before {
     width: 60%;
     max-width: 400px;
     font-weight: bold;
+    transition: all 0.3s ease;
+
 }
 
 .formulario__boton:hover {
     background: var(--color-verde);
     box-shadow: 0px 0px 6px var(--color-verde);
+    transform: scale(1.05);
+
 }
 
+/* Footer */
 .footer {
     background-color: var(--color-negro);
     padding: 20px 0;
@@ -196,13 +213,15 @@ body::before {
     justify-content: center;
     width: 30px;
     height: 30px;
-    transition: transform 0.3s, background 0.3s;
+    transition: transform 0.6s ease-in-out;
+
 }
 
 .footer__redes-enlace:hover {
-    transform: scale(1.1);
     background: var(--color-amarillo);
     color: var(--color-negro);
+    transform: rotate(360deg);
+
 }
 
 .footer__menu {
@@ -251,9 +270,16 @@ body::before {
     background-color: var(--color-blanco);
 }
 
-.footer__copyright {
-    font-size: 14px;
-    color: var(--color-blanco);
+.footer__licencia {
+    display: block;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.footer__licencia-img {
+    margin: 0 auto;
+    display: inline-block;
+    width: 80px; 
 }
 
 @media (max-width: 768px) {
@@ -428,4 +454,19 @@ body::before {
     .formulario__boton {
         width: 100%;
     }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.formulario__input {
+    animation: shake 0.3s ease-in-out;
+    animation-iteration-count: 1; 
+    border-color: var(--color-verde); 
+    transition: all 0.3s ease;
 }

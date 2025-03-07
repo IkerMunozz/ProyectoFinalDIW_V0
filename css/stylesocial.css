@@ -36,6 +36,11 @@ header {
 .logo img {
     height: 190px;
     cursor: pointer;
+    transition: transform 0.2s ease-out;
+
+}
+.logo img:hover {
+    transform: scale(1.05); 
 }
 
 .header__nav {
@@ -71,7 +76,6 @@ header {
     cursor: pointer;
 }
 
-/* Ocultar los enlaces móviles por defecto */
 .header__nav-mobile {
     display: none;
 }
@@ -402,11 +406,11 @@ footer {
     justify-content: center;
     width: 30px;
     height: 30px;
-    transition: transform 0.3s, background 0.3s;
+    transition: transform 0.6s ease-in-out;
 }
 
 .social-icons a:hover {
-    transform: scale(1.1);
+    transform: rotate(360deg);
     background: var(--color-amarillo);
     color: black;
 }
@@ -467,7 +471,17 @@ footer {
     font-size: 14px;
     color: var(--color-blanco);
 }
+.footer__licencia {
+    display: block;
+    text-align: center; 
+    margin-top: 20px;
+}
 
+.footer__licencia-img {
+    margin: 0 auto;
+    display: inline-block;
+    width: 80px; 
+}
 @media (max-width: 768px) {
     .header__menu-toggle {
         display: block;

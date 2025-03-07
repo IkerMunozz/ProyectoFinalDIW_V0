@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 950px;
+
 }
 
 body::before {
@@ -35,6 +36,7 @@ body::before {
     z-index: -1;
 }
 
+/* Header */
 .header {
     background-color: var(--color-negro);
     width: 100%;
@@ -49,6 +51,11 @@ body::before {
 .header__logo-img {
     height: 190px;
     cursor: pointer;
+    transition: transform 0.2s ease-out;
+}
+
+.header__logo-img:hover {
+    transform: scale(1.05); 
 }
 
 .header__nav {
@@ -77,6 +84,7 @@ body::before {
     cursor: pointer;
 }
 
+/* Main */
 .main {
     display: flex;
     justify-content: center;
@@ -86,6 +94,7 @@ body::before {
     flex: 1;
 }
 
+/* Card */
 .tarjeta {
     padding: 2rem;
     border-radius: 10px;
@@ -126,7 +135,11 @@ body::before {
     align-items: center;
     cursor: pointer;
     font-size: 16px;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s, transform 0.3s ease;
+}
+
+.tarjeta__boton:hover {
+    transform: scale(1.05);
 }
 
 .tarjeta__boton--sesion {
@@ -139,7 +152,7 @@ body::before {
 .tarjeta__boton--sesion:hover {
     background-color: var(--color-amarillo);
     color: var(--color-negro);
-    border: 1px solid var(--color-negro);
+    border: 1px solid rgba(0, 0, 0, 0.7);
 }
 
 .tarjeta__boton--registro {
@@ -155,6 +168,7 @@ body::before {
     border: 1px solid var(--color-amarillo);
 }
 
+/* Footer */
 .footer {
     background-color: var(--color-negro);
     padding: 20px 0;
@@ -182,13 +196,15 @@ body::before {
     justify-content: center;
     width: 30px;
     height: 30px;
-    transition: transform 0.3s, background 0.3s;
+    transition: transform 0.6s ease-in-out;
+
 }
 
 .footer__redes-enlace:hover {
-    transform: scale(1.1);
     background: var(--color-amarillo);
     color: var(--color-negro);
+    transform: rotate(360deg);
+
 }
 
 .footer__menu {
@@ -208,6 +224,7 @@ body::before {
 
 .footer__menu-enlace:hover {
     text-decoration: underline;
+    
 }
 
 .footer__boton-contacto {
@@ -237,11 +254,13 @@ body::before {
     background-color: var(--color-blanco);
 }
 
-.footer__copyright {
-    font-size: 14px;
-    color: var(--color-blanco);
+.footer__licencia {
+    display: block;
+    text-align: center; 
+    margin-top: 20px;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .header__menu-toggle {
         display: block;

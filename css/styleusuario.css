@@ -36,6 +36,11 @@ header {
 .logo img {
     height: 190px;
     cursor: pointer;
+    transition: transform 0.2s ease-out;
+
+}
+.logo img:hover {
+    transform: scale(1.05); 
 }
 
 .header__nav {
@@ -71,7 +76,6 @@ header {
     cursor: pointer;
 }
 
-/* Ocultar los enlaces móviles por defecto */
 .header__nav-mobile {
     display: none;
 }
@@ -85,6 +89,7 @@ header {
     width: 30px;
     cursor: pointer;
 }
+
 .saldo-container, .notificacion-container {
     position: relative;
     display: inline-block;
@@ -118,6 +123,16 @@ main {
     justify-content: center;
     width: 100%;
 }
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 .perfil-container {
     width: 90%;
@@ -129,6 +144,8 @@ main {
     box-shadow: 0 0 15px var(--color-verde);
     margin-top: 30px;
     margin-bottom: 30px;
+    animation: slideInFromBottom 1s ease-out forwards;
+    opacity: 0; 
 }
 
 .perfil-header {
@@ -243,11 +260,11 @@ footer {
     justify-content: center;
     width: 30px;
     height: 30px;
-    transition: transform 0.3s, background 0.3s;
+    transition: transform 0.6s ease-in-out;
 }
 
 .social-icons a:hover {
-    transform: scale(1.1);
+    transform: rotate(360deg);
     background: var(--color-amarillo);
     color: black;
 }
@@ -308,6 +325,18 @@ footer {
 .footer-text {
     font-size: 14px;
     color: var(--color-blanco);
+}
+
+.footer__licencia {
+    display: block;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.footer__licencia-img {
+    margin: 0 auto;
+    display: inline-block;
+    width: 80px; 
 }
 
 @media (max-width: 768px) {
@@ -371,7 +400,6 @@ footer {
         display: none !important;
     }
 
-    /* Ajustes para el perfil */
     .perfil-container {
         width: 85%;
         padding: 15px;
@@ -395,7 +423,6 @@ footer {
         font-size: 20px;
     }
 
-    /* Ajustes footer */
     .footer-menu {
         flex-direction: column;
         gap: 20px;

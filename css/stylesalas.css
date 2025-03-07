@@ -41,6 +41,11 @@ header {
 .logo img {
     height: 190px;
     cursor: pointer;
+    transition: transform 0.2s ease-out;
+
+}
+.logo img:hover {
+    transform: scale(1.05); 
 }
 
 .header__nav {
@@ -76,7 +81,6 @@ header {
     cursor: pointer;
 }
 
-/* Ocultar los enlaces móviles por defecto */
 .header__nav-mobile {
     display: none;
 }
@@ -85,8 +89,8 @@ header {
     list-style: none;
     display: flex;
     gap: 20px;
-    justify-content: center; /* Centra los enlaces del menú */
-    flex-grow: 1; /* Hace que el menú ocupe todo el espacio disponible */
+    justify-content: center; 
+    flex-grow: 1; 
 }
 
 .headermenu a {
@@ -170,6 +174,7 @@ header {
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 .container input{
+    text-align: center;
     cursor: pointer;
     background-color: var(--color-amarillo);
     border-radius: 30px;
@@ -179,6 +184,13 @@ header {
     height: 50px;
     font-size: 16px;
     font-family: 'roboto', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    margin-bottom: 20px;
+}
+
+.container input:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
 }
 .containersalas{
     display: flex;
@@ -240,8 +252,6 @@ header {
     display: block;
     width: 107px;
     height: 40px;
-    margin: 15px auto 0;
-    padding: 10px;
     font-size: 16px;
     font-weight: 400;
     background: linear-gradient(to bottom, #eaff00, #4caf50);
@@ -251,6 +261,8 @@ header {
     cursor: pointer;
     transition: 0.3s;
     font-family: 'Lato', sans-serif;
+    margin: 10px  auto; 
+
 }
 
 .join-button:hover {
@@ -309,11 +321,11 @@ footer {
     justify-content: center;
     width: 30px;
     height: 30px;
-    transition: transform 0.3s, background 0.3s;
+    transition: transform 0.6s ease-in-out;
 }
 
 .social-icons a:hover {
-    transform: scale(1.1);
+    transform: rotate(360deg);
     background: var(--color-amarillo);
     color: black;
 }
@@ -374,6 +386,18 @@ footer {
     font-size: 14px;
     color: var(--color-blanco);
 }
+.footer__licencia {
+    display: block;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.footer__licencia-img {
+    margin: 0 auto;
+    display: inline-block;
+    width: 80px; 
+}
+
 
 @media (max-width: 768px) {
     .header__menu-toggle {
@@ -459,8 +483,16 @@ footer {
     }
 
     .container {
-        margin-top: 120px;
-        height: 200px;
+        min-height: 180px;
+        width: 100%;
+    }
+    
+    .texto h1 {
+        font-size: 20px;
+    }
+
+    .texto h2 {
+        font-size: 12px;
     }
 
     .menu-completo {
@@ -520,8 +552,21 @@ footer {
     }
 
     .container {
-        margin-top: 100px;
-        height: 180px;
+        width: 100%;
+        margin-top: 20px; 
+    }
+
+    .texto {
+        text-align: center;
+        color: var(--color-blanco);
+    }
+
+    .texto h1 {
+        font-size: 20px;
+    }
+
+    .texto h2 {
+        font-size: 14px;
     }
 
     .contact-btn {
@@ -533,18 +578,17 @@ footer {
     }
 }
 
-/* En pantallas grandes, no mostrar el menú hamburguesa ni la clase .ocultar */
 @media (min-width: 769px) {
     .header__menu-toggle {
-        display: none; /* No mostrar el botón de menú hamburguesa en pantallas grandes */
+        display: none; 
     }
 
     .ocultar {
-        display: none; /* No mostrar la clase .ocultar en pantallas grandes */
+        display: none; 
     }
+
 }
 
-/* Ajustes del contenedor de salas */
 .salas-container {
     width: 100%;
     max-width: 1200px;
@@ -558,7 +602,6 @@ footer {
     gap: 20px;
     width: 100%;
 }
-
 
 
 

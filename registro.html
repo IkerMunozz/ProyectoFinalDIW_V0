@@ -6,11 +6,13 @@
     <title>Página de registro</title>
     <link rel="stylesheet" href="css/styleformregistro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
     <header class="header">
         <div class="header__logo">
-            <img class="header__logo-img" src="img/logo.png" alt="logo" onclick="window.location.href='principal.html';">
+            <img class="header__logo-img" src="img/logo.png" alt="logo" onclick="window.location.href='index.html';">
         </div>
         <button class="header__menu-toggle" aria-label="Abrir menú">
             <i class="fas fa-bars"></i>
@@ -29,14 +31,14 @@
                 <form class="formulario">
                     <div class="formulario__campos">
                         <div class="formulario__columna">
-                            <label for="email" class="formulario__label">Email</label>
-                            <input type="text" class="formulario__input" placeholder="Escribe el email">
+                            <label for="email" class="formulario__label" id="email">Email</label>
+                            <input type="text" class="formulario__input" placeholder="Escribe el email" id="email">
                             
                             <label for="contraseña" class="formulario__label">Contraseña</label>
                             <input type="password" class="formulario__input" placeholder="Escribe la contraseña">
         
-                            <label for="dni" class="formulario__label">DNI</label>
-                            <input type="text" class="formulario__input" placeholder="Escribe tu dni">
+                            <label for="dni" class="formulario__label" id="dni">DNI</label>
+                            <input type="text" class="formulario__input input-error" placeholder="Escribe tu dni" id="dni">
                         </div>
         
                         <div class="formulario__columna">

@@ -43,3 +43,6 @@ Este proyecto está licenciado bajo la licencia Creative Commons BY.
 - Creación de la navegación entre secciones.
 ##FIGMA
 https://www.figma.com/design/mBClAdTmJg3BFgwWUCaDkI/Apuestas?node-id=0-1&p=f&t=jWxC14rD9seaPQnM-0
+
+### Versión 1
+- Insercción de IA y efectos desde la rama feature_v1

@@ -219,7 +219,6 @@ main {
     text-decoration: underline;
 }
 
-/* Footer */
 .footer {
     background-color: var(--color-negro);
     padding: 20px 0;
@@ -375,7 +374,6 @@ main {
 
 }
 
-/* Header */
 .header {
     background-color: var(--color-negro);
     width: 100%;

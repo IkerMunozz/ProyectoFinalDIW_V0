@@ -13,14 +13,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border-spacing: 0; /* Previene espacios en tablas */
+    border-spacing: 0; 
 }
 
 body, html {
     overflow-x: hidden;  
 }
 
-/* Estilo general para los títulos h1 */
 h1 {
     font-size: 28px;
     font-weight: bold;
@@ -34,7 +33,6 @@ h1 {
     margin-top: 20px;
 }
 
-/* Línea decorativa debajo de los títulos */
 h1::after {
     content: "";
     display: block;
@@ -57,7 +55,7 @@ main{
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 140px; /* Añadir padding-top para el header */
+    padding-top: 140px; 
 }
 
 .logo img {
@@ -65,7 +63,6 @@ main{
     cursor: pointer;
 }
 
-/* Header */
 header {
     background-color: var(--color-negro);
     width: 100%;
@@ -123,7 +120,6 @@ header {
     cursor: pointer;
 }
 
-/* Main */
 .main {
     display: flex;
     justify-content: center;
@@ -149,7 +145,7 @@ header {
 
 .saldo-tooltip, .notificacion-tooltip {
     position: absolute;
-    background-color: black;
+    background-color: transparent;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -206,14 +202,14 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    overflow-x: auto; /* Permite scroll horizontal en móvil */
-    background: var(--color-gris); /* Añadido el fondo gris */
-    border-radius: 12px; /* Añadido borde redondeado */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Añadida sombra sutil */
+    overflow-x: auto; 
+    background: var(--color-gris); 
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .ranking-table {
-    min-width: 600px; /* Ancho mínimo para asegurar legibilidad */
+    min-width: 600px; 
     width: 100%;
 }
 
@@ -250,7 +246,6 @@ body {
     border-color: #1f8b30;
 }
 
-/* Tabla de ranking */
 .ranking-table {
     width: 100%;
     border-collapse: collapse;
@@ -258,7 +253,6 @@ body {
     border-radius: 10px;
 }
 
-/* Cabecera */
 .ranking-table thead {
     background: linear-gradient(to right, #27AE3E, #166b27);
     color: white;
@@ -271,7 +265,6 @@ body {
     padding: 12px 15px;
 }
 
-/* Celdas */
 .ranking-table td {
     padding: 12px 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -279,7 +272,6 @@ body {
     font-size: 14px;
 }
 
-/* Filas intercaladas */
 .ranking-table tbody tr:nth-child(odd) {
     background-color: rgba(255, 255, 255, 0.03);
 }
@@ -288,12 +280,10 @@ body {
     background-color: transparent;
 }
 
-/* Efecto hover */
 .ranking-table tbody tr:hover {
     background: rgba(255, 255, 255, 0.05);
 }
 
-/* Mejora de los iconos de los puestos */
 .ranking-table td:first-child {
     font-weight: bold;
     font-size: 16px;
@@ -304,7 +294,6 @@ body {
     margin-right: 8px;
 }
 
-/* Estilo especial para los tres primeros */
 .ranking-table tbody tr:nth-child(1) {
     background: rgba(255, 215, 0, 0.1);
 }
@@ -317,7 +306,6 @@ body {
     background: rgba(205, 127, 50, 0.1);
 }
 
-/* Contenedor de las tarjetas */
 .containersalas {
     display: flex;
     justify-content: center;
@@ -328,9 +316,8 @@ body {
     margin-top: 20px;
 }
 
-/* Estilo de las tarjetas */
 .card {
-    background: var(--color-gris); /* Fondo oscuro con textura */
+    background: var(--color-gris); 
     color: #fff;
     width: 280px;
     height: 380px;
@@ -344,13 +331,11 @@ body {
     flex-direction: column;
 }
 
-/* Efecto hover */
 .card:hover {
     transform: scale(1.05); 
     box-shadow: 0 6px 15px var(--color-verde);
 }
 
-/* Estilo de la parte superior de la tarjeta (cabecera con imagen) */
 .card-header {
     width: 100%;
     height: 160px;
@@ -365,7 +350,6 @@ body {
     object-fit: cover;
 }
 
-/* Contenedor de texto dentro de la tarjeta */
 .card-content {
     padding: 20px;
     text-align: center;
@@ -375,15 +359,13 @@ body {
     justify-content: space-between;
 }
 
-/* Título de desafío */
 .card-content .title {
     font-size: 18px;
     font-weight: bold;
-    color: #FBFF00; /* Amarillo destacado */
+    color: #FBFF00; 
     margin-bottom: 10px;
 }
 
-/* Descripción del desafío */
 .card-content .description {
     font-size: 14px;
     color: #ccc;
@@ -391,14 +373,12 @@ body {
     flex-grow: 1;
 }
 
-/* Precio del desafío */
 .card-content .price {
     font-size: 18px;
     font-weight: 700;
     margin: 10px 0;
 }
 
-/* Botón de acción (unirse) */
 .card .join-button {
     width: 100%;
     background: #27AE3E;
@@ -526,12 +506,10 @@ header, footer {
     width: 80px; 
 }
 
-/* Ocultar el botón del menú hamburguesa por defecto */
 .header__menu-toggle {
     display: none;
 }
 
-/* Ocultar los enlaces móviles por defecto */
 .header__nav-mobile {
     display: none;
 }
@@ -553,7 +531,7 @@ header, footer {
         position: absolute;
         top: 120px;
         right: 20px;
-        width: 250px; /* Ancho fijo para todas las secciones */
+        width: 250px; 
         background: rgba(0, 0, 0, 0.95);
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         border-radius: 12px;
@@ -565,7 +543,6 @@ header, footer {
         display: flex;
     }
 
-    /* Mostrar los enlaces móviles solo en responsive */
     .header__nav-mobile {
         display: block;
         margin-top: 10px;
@@ -600,12 +577,10 @@ header, footer {
         text-align: center;
     }
 
-    /* Ocultar iconos en móvil */
     .iconos {
         display: none !important;
     }
 
-    /* Añadir nuevos enlaces al menú */
     .header__nav::after {
         content: '';
         display: block;
@@ -637,7 +612,6 @@ header, footer {
         text-align: center;
     }
 
-    /* Ajustes para el ranking */
     .ranking-container {
         width: 95%;
         padding: 10px;
@@ -650,10 +624,9 @@ header, footer {
     .ranking-table th,
     .ranking-table td {
         padding: 8px;
-        white-space: nowrap; /* Evita que el texto se rompa */
+        white-space: nowrap; 
     }
 
-    /* Ajustes para los desafíos */
     .containersalas {
         grid-template-columns: 1fr;
         padding: 15px;
@@ -675,7 +648,6 @@ header, footer {
         padding: 15px;
     }
 
-    /* Ajustes footer */
     .footer__menu {
         flex-direction: column;
         gap: 20px;
@@ -714,7 +686,7 @@ header, footer {
     }
 
     .header__nav {
-        width: 230px; /* Ancho fijo más pequeño para móviles */
+        width: 230px; 
     }
 
     .iconos{

@@ -46,3 +46,6 @@ https://www.figma.com/design/mBClAdTmJg3BFgwWUCaDkI/Apuestas?node-id=0-1&p=f&t=j
 
 ### Versión 1
 - Insercción de IA y efectos desde la rama feature_v1
+
+### Versión 2
+- Mejorada la accesibilidad de la página web

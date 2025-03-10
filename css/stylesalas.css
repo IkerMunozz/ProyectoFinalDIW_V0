@@ -121,7 +121,7 @@ header {
 
 .saldo-tooltip, .notificacion-tooltip {
     position: absolute;
-    background-color: black;
+    background-color: transparent;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
